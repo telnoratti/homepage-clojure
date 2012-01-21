@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calvin Winkowski</title>
+        <link rel="icon" href="/media/imgs/favicon.ico" type="image/ico" sizes="16x16" />
+        <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400italic' rel='stylesheet' type='text/css' />
+        <link href="http://fonts.googleapis.com/css?family=Nova+Slim" rel="stylesheet" type="text/css" />
+        <link href="/media/css/base.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="fade" />
+        <div id="top">
+            <div id="navdrop">
+                <img class="arrow" id="downarrow" onClick="javascript:sidebar();" src="/media/imgs/downarrow.png" />
+                <img class="arrow" id="uparrow" onClick="javascript:sidebar();" src="/media/imgs/uparrow.png" />
+                <nav>
+                    <ul>
+                        <li><h4><a>About Me</a></h4></li>
+                        <li><h4><a>Links</a></h4></li>
+                        <li><h4><a>Contact</a></h4></li>
+                        <li><h4><a>About This Site</a></h4></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="heading">
+                <h1>Calvin Winkowski</h1>
+            </div>
+        </div>
+        <div class="sweet-justice" id="content">
+            <div id="c1">
+                <h2>About Me</h2>
+                <p>I am a Computer Science and Mathematics student at Virginia Tech. Currently, I'm freelancing as a web developer. I spend my spare time programming several projects, playing PC games, or enjoying a good book or movie. My music tastes vary, but mostly listen to symphonic metal.</p>
+                <p>I am well versed in GNU/Linux and almost as knowledgeable in the Windows suite. I know Java, C, python, HTML, CSS, JavaScript, and bash and I am in the process of learning Clojure (which this site was written in), Ruby, C++, and x86 assembly. I haven't decided on my favourite language yet, but I will say the code I've been happiest with was written in C.</p>
+                <p>The Minecraft server I run is on downtime while the players wait for me to finish writing a plugin, <a target="_blank" href="http://dev.bukkit.org/server-mods/researchcraft/">ResearchCraft</a>, for the server, but it's been mostly up for the past year and a half. I'm also working with a few students at Tech on various programming projects, none of which are substantial, but are mostly to expand our knowledge and improve our familiarity with different programming aspects.</p>
+            </div>
+            <div id="c2">
+                <h2>Links</h2>
+                <ul class="links" id="links">
+                    <li>
+                        <a target="_blank" href="http://www.pandora.com/#!/profile/activity/atlantispuddlejumper"><img src="/media/imgs/icons/pandora.png" /></a>
+                        <p>Pandora Profile</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.linkedin.com/pub/calvin-winkowski/40/560/400"><img src="/media/imgs/icons/linkedin.png" /></a>
+                        <p>Linkedin</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/telnoratti"><img src="/media/imgs/icons/github.png" /></a>
+                        <p>github</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://dev.bukkit.org/profiles/telnoratti/"><img src="/media/imgs/icons/bukkitdev.png" /></a>
+                        <p>Bukkit Dev</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://plus.google.com/u/0/107979948164433888296/posts"><img src="/media/imgs/icons/googleplus.png" /></a>
+                        <p>Google Plus</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/#!/@telnoratti"><img src="/media/imgs/icons/twitter.png" /></a>
+                        <p>Twitter</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="c3">
+                <h2>Contact</h2>
+                <ul class="links" id="contacts">
+                    <li id="personal-email">
+                        <a target="_blank" href="/email-link"><img src="/media/imgs/icons/email.png" /></a>
+                        <p></p>
+                    </li>
+                    <li>
+                        <img src="/media/imgs/icons/irc.png" />
+                        <p>telnoratti on irc.freenode.net</p>
+                    </li>
+                    <li>
+                        <a href="tel:7575610042"><img src="/media/imgs/icons/phone.png" /></a>
+                        <p>(757) 561-0042</p>
+                    </li>
+                    <li>
+                        <a href="skype:sonictardis?chat"><img src="/media/imgs/icons/skype.png" /></a>
+                        <p>sonictardis</p>
+                    </li>
+                </ul>
+                <h3>Email</h3>
+                <form id="emailform">
+                    <ul>
+                        <li>From:<input id="from" type="text" name="from" /></li>
+                        <li>Subject:<input id="subject" type="text" name="subject" /></li>
+                        <li>Message:<textarea id="message" name="message"></textarea></li>
+                        <li><p id="result"></p></li>
+                        <li><button type="button" onClick="emailForm();">Submit</button></li>
+                    </ul>
+                </form>
+            </div>
+            <div id="c4">
+                <h2>About This Site</h2>
+                <p>This website was was written in <a target="_blank" href="http://clojure.org/">Clojure</a> on <a target="_blank" href="https://github.com/mmcgrana/ring">Ring</a> and <a target=_"blank" href="https://github.com/weavejester/compojure">Compojure</a>. It also uses <a target="_blank" href="https://github.com/drewr/postal">Postal</a> for the email form. The HTML portion uses <a target="_blank" href="http://jquery.com/">JQuery</a> and <a target="_blank" href="https://github.com/aristus/sweet-justice">sweet-justice</a>. It's hosted on the <a target="_blank" href="http://www.heroku.com/">heroku</a> cloud.</p>
+                <p>I put this together to experiment with functional languages. Also because it was long due that I made my own website. Some of the code was patched together from various sources, but all the HTML, CSS, and any JavaScript that wasn't already mentioned was written by me from scratch. Also I don't own rights on the logos I used. The fonts are <a target="_blank" href="http://www.google.com/webfonts/specimen/Nova+Slim">Nova Slim</a> and <a target="_blank" href="http://www.google.com/webfonts/specimen/Dancing+Script">Dancing Script</a>.
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="/media/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="/media/js/sweet-justice.min.js" type="text/javascript"></script>
+        <script src="/media/js/sidebar.js" type="text/javascript"></script>
+        <script src="/media/js/emailform.js" type="text/javascript"></script>
+        <!-- End Scripts -->
+    </body>
+
+</html>

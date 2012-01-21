@@ -1,0 +1,214 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 840px;
+    background-image: url('/media/imgs/background.png');
+}
+
+div#fade {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background-image: url('/media/imgs/fadestrip.png');
+    background-repeat: repeat-x;
+}
+
+div#top {
+    position: relative;
+    width: 840px;
+    margin: 0 auto 0 0px;
+}
+    div#top div#navdrop {
+        width: 140px;
+        height: 120px;
+    }
+        div#top div#navdrop img#uparrow {
+            opacity: 0.0;
+            z-index: -1;
+        }
+        div#top div#navdrop img#downarrow {
+            z-index: 1;
+        }
+        div#top div#navdrop img.arrow {
+            position: absolute;
+            top: 25px; 
+            left: 35px;
+            transition: transform .3s;
+            -moz-transition: -moz-transform .3s;
+            -webkit-transition: -webkit-transform .3s;
+            -o-transition: -o-transform .3s;
+        }
+            div#top div#navdrop img.arrow:hover {
+                transform:scale(1.1,1.1);
+                -ms-transform:scale(1.1,1.1);
+                -webkit-transform:scale(1.1,1.1);
+                -o-transform:scale(1.1,1.1);
+                -moz-transform:scale(1.1,1.1);
+            }
+            div#top div#navdrop img.arrow:active {
+                transform:scale(0.9,0.9);
+                -ms-transform:scale(0.9,0.9);
+                -webkit-transform:scale(0.9,0.9);
+                -o-transform:scale(0.9,0.9);
+                -moz-transform:scale(0.9,0.9);
+            }
+        div#top div#navdrop nav {
+            opacity: 0.0;
+        }
+            div#top div#navdrop nav li {
+                position: absolute;
+                top: 60px;
+                width: 140px;
+                height: 60px;
+                border-radius: 15px;
+                z-index: -2;
+                transition: transform .3s;
+                -moz-transition: -moz-transform .3s;
+                -webkit-transition: -webkit-transform .3s;
+                -o-transition: -o-transform .3s;
+            }            
+            div#top div#navdrop nav li:hover {
+                transform:scale(1.1,1.1);
+                -ms-transform:scale(1.1,1.1);
+                -webkit-transform:scale(1.1,1.1);
+                -o-transform:scale(1.1,1.1);
+                -moz-transform:scale(1.1,1.1);
+            }
+                div#top div#navdrop nav li h4 {
+                    text-align: center;
+                    font-family: 'Old Standard TT', serif;
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: 1.25em;
+                }
+
+    div#top div#heading {
+        width: 700px;
+        height: 120px;
+        position: absolute;
+        left: 140px;
+        top: 10px;
+    }
+        div#top div#heading h1 {
+            text-align: center;
+            font-family: 'Old Standard TT', serif;
+            font-style: italic; 
+            font-weight: 400;
+            font-size: 4.7em;
+            text-shadow: 4px 4px 3px rgb(55,55,55);
+        }
+
+    div#content {
+        position: absolute;
+        width: 700px;
+        top: 120px;
+        left: 140px;
+        border-top: ;
+    }
+        div#content div ul.links {
+        }
+            div#content div ul.links li {
+                width: 340px;
+                text-align: center;
+                border-radius: 10px;
+                margin: 0 3px 5px 2px;
+                float: left;
+                transition: background .4s;
+                -moz-transition: background .4s;
+                -webkit-transition: background .4s;
+                -o-transition: background .4s;
+            }
+                div#content div ul.links li:hover {
+                    background: rgba(20, 20, 20, 0.7);
+                }
+            div#content div ul.links img {
+                padding-top: 10px;
+                height: 50px;
+            }
+            div#content div ul.links p {
+                padding-bottom: 10px;
+            }
+        div#content div#c1 {
+            position: absolute;
+            width: 700px;
+            z-index: 1;
+        }
+        div#content div#c2, div#content div#c3, div#content div#c4 {
+            position: absolute;
+            opacity: 0.0;
+            width: 700px;
+            z-index: -1;
+        }
+        div#content div h2, div#content div h3 {
+            font-family: 'Nova Slim', cursive;
+            font-weight: 400;
+            font-size: 1.7em;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+            div#content div h3 {
+                font-size: 1.3em;
+            }
+        div#content div p {
+            font-family: 'Nova Slim', cursive;
+            font-weight: 400;
+        }
+            div#content div#c1 p, div#content div#c4 p {
+                width: 630px;
+                margin: 0 0 1em 35px;
+            }
+                div#content div#c4 a,
+                div#content div#c1 a {
+                    text-decoration: underline;
+                }
+            div#content div#c3 {
+                height: 650px;
+            }
+                div#content div#c3 li#personal-email p:after {
+                    content: "calvin@winkowski.me"
+                }
+                div#content div#c3 form#emailform {
+                }
+                    div#content div#c3 form#emailform ul {
+                        text-align: center;
+                    }
+                        div#content div#c3 form#emailform ul li {
+                            float: left;
+                            width: 640px;
+                            margin: 10px 0 0 0;
+                        }
+                        div#content div#c3 form#emailform ul li, div#content div#c3 form#emailform ul li input, div#content div#c3 form#emailform ul li textarea, div#content div#c3 form#emailform ul li button {
+                            font-family: 'Nova Slim', cursive;
+                        }
+                            div#content div#c3 form#emailform ul li input, div#content div#c3 form#emailform ul li textarea, div#content div#c3 form#emailform ul li button {
+                                color: black;
+                                padding: 3px;
+                                margin-left: 3px;
+                                vertical-align: top;
+                            }
+                                div#content div#c3 form#emailform ul li input#from {
+                                    width: 220px;
+                                    margin: 0 0 0 28px;
+                                }
+                                div#content div#c3 form#emailform ul li input#subject {
+                                    width: 220px;
+                                    margin: 0 0 0 9px;
+                                }
+
+                                div#content div#c3 form#emailform ul li textarea {
+                                    width: 500px;
+                                    height: 130px;
+                                }
+
+                                div#content div#c3 form#emailform ul li button, div#content div#c3 form#emailform ul li p {
+                                    margin-left: 70px;
+                                }
+                                    div#content div#c3 form#emailform ul li button {
+                                        border-radius: 3px;
+                                    }
