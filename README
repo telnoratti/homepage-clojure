@@ -1,0 +1,4 @@
+# Homepage-Clojure
+A simple homepage written using clojure and compojure.
+
+Note: core.data is not available on the github repository
